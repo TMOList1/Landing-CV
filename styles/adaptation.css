@@ -1,0 +1,190 @@
+@media all and (min-height: 900px) and (min-width: 1200px){
+	.vizitka div{
+			position: sticky;
+			top: 70px;
+	}
+	#form{
+		top: 589px;
+	}
+}
+
+@media all and (min-height: 900px) {
+	.content{
+			top: 70px;
+	}
+}
+
+@media all and (max-width: 1200px){
+	.wrapper{
+			display: grid;
+			grid-template-areas:
+			"main"
+			"viz"
+			"dis"
+			"foot";
+			grid-template-columns: 1fr;
+	}
+	#myName{
+			font-size: 12px;
+			text-shadow: 5px 5px 5px rgb(0, 0, 0);
+	}
+	#myProf{
+			font-size: 36px;
+			text-shadow: 5px 5px 5px rgb(0, 0, 0);
+	}
+	.vizitka{
+			margin: 0px;
+			border-radius: 0%;
+			border: none;
+			background-color: rgba(48, 48, 48, 0.952);
+			width: 750px;
+			margin: auto;
+			margin-top: 20px;
+	}
+	.vizitka div{
+			right: none;
+			width: auto;
+			margin: 0px;
+	}
+	.discription{
+			border-radius: 0%;
+			margin: auto;
+			margin-top: 20px;
+			width: 750px;
+	}
+	.content{
+			left: none;
+			width: auto;
+	}
+
+	.dropdown-content {
+			right: 0;
+			box-shadow: 0 1px 1px #888888;
+			
+	}
+	.dropdown-content a {
+			box-sizing: border-box;
+	}
+}
+@media all and (max-width: 800px){
+	.wrapper{
+			display: grid;
+			grid-template-areas:
+			"main"
+			"viz"
+			"dis"
+			"foot";
+			grid-template-columns: 1fr;
+	}
+	#myName{
+			font-size: 12px;
+			text-shadow: 5px 5px 5px rgb(0, 0, 0);
+	}
+	#myProf{
+			font-size: 36px;
+			text-shadow: 5px 5px 5px rgb(0, 0, 0);
+	}
+	.vizitka{
+			margin: 0px;
+			border-radius: 0%;
+			border: none;
+			background-color: rgba(48, 48, 48, 0.952);
+			width: 100vw;
+			margin: auto;
+	}
+	.vizitka div{
+			right: none;
+			width: auto;
+			margin: 0px;
+			border: none;
+	}
+	.discription{
+			border-radius: 0%;
+			margin: auto;
+			width: 100vw;
+			border: none;
+	}
+	.foot{
+			margin: 0px;
+	}
+	.nav{
+			display: none;
+			top: 50px;
+			left: 0px;
+			z-index: 1;
+			box-shadow: 2px 2px 2px rgb(119, 116, 116);
+	}
+	.nav div{
+			
+			display: grid;
+			width: 100vw;
+			
+	}
+	.nav a{
+			width: 100vw;
+			height: 35px;
+	}
+	.dropdown{
+			padding-bottom: 10px;
+	}
+	.dropdown-content{
+			right:auto;
+			left: 0px;
+			top:511px;
+			width:100vw;
+			z-index: 0;
+			box-shadow: 2px 2px 2px rgb(119, 116, 116);
+			
+	}
+	.dropdown-content a {
+			width: 100%;
+	}
+	.burger{
+			display: block;
+			position: fixed;
+			top:0px;
+			left: 0px;
+			background-color: #eee;
+			z-index: 2;
+			height: 51px;
+			width: 100vw;
+			box-shadow: 0px 2px 2px rgb(119, 116, 116);
+
+	}
+	.burger img{
+			height: 30px;
+			margin: 10px;
+			transition-duration: 0.5s;
+	}
+	.burger img:hover{
+		transform: scale(1.2);
+	}
+}
+@media all and (max-width: 550px){
+	.nav div{
+		width: 100vw;
+	}
+	.nav a{
+		width: 100vw;
+		height: 35px;
+		margin-right: 20px ;
+		border: 1px solid black;
+	}
+
+	.dropdown-content{
+		
+		width: 100vw;
+		
+	}
+	.dropdown-content a{
+		width: 90vw;
+		margin-right: 20px ;
+	}
+	
+	div.skills{
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		transition-duration: 1s;
+	}
+}

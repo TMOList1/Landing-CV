@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Landos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/global.css" type="text/css">
+	<link rel="stylesheet" href="styles/nav.css" type="text/css">
+	<link rel="stylesheet" href="styles/main.css" type="text/css">
+	<link rel="stylesheet" href="styles/vizitcard.css" type="text/css">
+	<link rel="stylesheet" href="styles/description.css" type="text/css">
+	<link rel="stylesheet" href="styles/adaptation.css" type="text/css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='scripts/script.js'></script>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="burger"><a onclick="toggle('navbar')"><img id="borg" src="img/burger.png" alt="burg"></a></div>
+
+		<div id="navbar" class="nav">
+			<div>
+				<div><a id="big" href="">Главная</a></div>
+				<div><a href="#vizitka">О себе</a></div>
+				<div><a href="#education">Образование</a></div>
+				<div><a href="#experience">Опыт</a></div>
+				<div><a href="#skills">Навыки</a></div>
+				<div class="dropdown" onmouseover="show('dropdown')" onmouseout="hide('dropdown')">
+					<a class="dropdown">Проекты</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="dropdown-content" id="dropdown" onmouseover="show('dropdown')" onmouseout="hide('dropdown')">
+			<a href="#projects" onclick="setProject(0)">Шифр</a>
+			<a href="#projects" onclick="setProject(1)">Чат</a>
+			<a href="#projects" onclick="setProject(2)">Радар</a>
+		</div>
+
+
+
+
+		<div class="main">
+			<div>
+				<p id="myName">Frontend/Infocommunication</p>
+				<br>
+				<p id="myProf">Junior developer</p>
+				<br>
+				<br>
+				<a class="downloadButton" href="docs/resume.pdf" download>
+					Скачать резюме
+				</a>
+			</div>
+
+		</div>
+
+		<div class="vizitka" id="vizitka">
+			<div>
+				<br><br>
+				<img id="me" src="img/me/me2.jpg" alt="me">
+
+				<br><br>
+				<p id="name"><b>Даниил Иванов</b></p>
+				<p id="age"></p>
+				<p>г.Санкт-Петербург</p>
+				<p>daneel.ivanov1705@gmail.com</p>
+				<p>Telegram: @Anduinka</p>
+				<br>
+			</div>
+			
+		</div>
+
+		<script>
+			let bDay = new Date("May 17, 2001 09:15:36");
+			let now = new Date();
+			let age = (now - bDay) / (60 * 60 * 24 * 1000 * 365);
+			let ageP = document.getElementById("age");
+			ageP.innerHTML = ~~age + " год";
+		</script>
+
+		<div class="discription">
+
+			<div class="content" id="education">
+				<br><br>
+				<h3>Образование</h3>
+				<br><br>
+
+				<div class="education">
+					<div>
+						<img class='skills' src="img/mortarboard.png" alt="me">
+					</div>
+					<br><br>
+					<div>
+						<b>Санкт-Петербургский государственный университет
+							аэрокосмического приборостроения</b> <br>
+						2019 — 2023<br>
+						Факультет: Институт информационных систем и защиты
+						информации<br>
+						Направление: Инфокоммуникационные технологии и
+						системы связи <br>
+					</div>
+					<br>
+					<div>
+						<b>Виртуальная кафедра СПбГУАП на базе Иннополис</b><br>
+						2023<br>
+						Программа повышения квалификации "Основы Frontend-разработки" (в процессе)
+						<hr>
+						<b>Прохождение педагогической подготовки в рамках особого курса <br> 2020
+					</div>
+				</div>
+				<br><br>
+			</div>
+
+			<div class="content" id="experience">
+				<br><br>
+				<h3><u>Опыт работы</u></h3>
+				<br><br>
+
+				<div class="work">
+					<div>
+						<img class='skills' src="img/suitcase.png" alt="me">
+					</div>
+				</div>
+				<br><br>
+				<div>
+					<b>Приёмная комиссия СПбГУАП</b><br>
+					Оператор / косультант<br>
+					Июнь - июль 2022 <br>
+					В рамках производственной практики работал в области консультации абитуриентов, что дало развитие Soft-skills,
+					а также оператором Суперсервиса. <br>
+					<hr>
+					<b>Частные образовательные услуги</b><br>
+					Преподаватель <br>
+					Сентябрь 2020 - май 2021 <br>
+					Занимался подготовкой школьников к Единому Государственному Экзамену по предметам Физика и Информатика.
+					<hr>
+					<b>СпБ МСГ (главное фото)</b><br>
+					Май 2022 - настоящее время <br>
+					Занимаюсь организационной деятельностью в области мероприятий как локального уровня, так и городского уровней.
+					Кроме того, принимаю участие разработке локальной учётной системы SMS (Student Managment System).
+				</div>
+
+				<br><br>
+			</div>
+
+
+			<div class="content" id="skills">
+				<br><br>
+				<h3>Навыки</h3>
+				<br><br>
+
+				<div class="skills">
+					<div>
+						<img class='skills' src="img/html.png" alt="me">
+					</div>
+					<div>
+						<img class='skills' src="img/css.png" alt="me">
+					</div>
+					<div>
+						<img class='skills' src="img/js-file.png" alt="me">
+					</div>
+					<div>
+						<img class='skills' src="img/java.png" alt="me">
+					</div>
+					<div>
+						<img class='skills' src="img/python.png" alt="me">
+					</div>
+					<div>
+						<img class='skills' src="img/icons8-c++-100.png" alt="me">
+					</div>
+				</div>
+				<br><br>
+			</div>
+
+
+			<div class="content" id="projects">
+				<br><br>
+				<h3>Проекты</h3>
+				<br>
+				<p>Вот пара проектов, разработанных в рамках обучения в СПбГУАП:</p><br>
+
+				<div class="projects">
+					<div><img src="img/projects/left.png" class="button" alt="prev" onClick="leftbut()"></div>
+					<div class="cdiv" id="imgdiv">
+						<img class="projects" src="img/projects/00.jpg" id="photoM" alt="diafilm">
+					</div>
+					<div><img src="img/projects/right.png" class="button1" alt="next" onClick="rightbut()"></div>
+
+				</div>
+
+				<p id="info"></p>
+				<hr>
+				<p>Кроме того, Вы сейчас находитесь на одном из сайтов написанных во время прохождения курса по
+					frontend-разработке.</p>
+			</div>
+			<script>
+				let photo = document.getElementById("photoM");
+				document.getElementById('info').innerHTML = discription[schet];
+			</script>
+
+		</div>
+
+		<div class="foot">
+			<div>
+				<a href="https://github.com/TMOList1">Git</a>
+				<a href="https://t.me">Telegram</a>
+				<a href="https://vk.com/tot_big_chuvak">VK</a>
+				<a href="https://mail.google.com/">Gmail</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

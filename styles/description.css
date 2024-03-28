@@ -1,0 +1,111 @@
+.discription{
+	background-color: #eee;
+	border: 1px solid black;
+	box-shadow: 0px 0px 5px rgb(0, 0, 0);
+	grid-area: dis;
+	border-radius: 0%;
+	padding: 0px 0px;
+	margin: 20px auto 20px 10px;
+	line-height: 30px;
+}
+
+img.skills{
+	width: 100px;
+}
+h3{
+	font-size: 45px;
+}
+
+.content{
+	left: 10px;
+	width: 650px;
+	padding: 50px;
+	text-align: center;
+	/* border-top: solid black; */
+}
+
+div.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 1vw;
+}
+
+.content:nth-child(odd) {
+	/* background-color: rgb(48, 48, 48); */
+	box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+.content:nth-child(even) {
+	background-color: #eee;
+	box-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
+
+#education{
+	background: url("../img/guap.jpg") rgba(0, 0, 0, 0.40);
+	background-attachment: fixed;
+	background-position: center;
+	background-blend-mode: multiply;
+	color: whitesmoke
+}
+
+b{
+	font-size: 18px;
+}
+
+#skills{
+	background: url("../img/me/mainPC.jpg") rgba(0, 0, 0, 0.12);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	color: white;
+}
+img.skills{
+	transition-duration: 0.5s;
+}
+img.skills:hover{
+	transform: translateY(5px);
+	transform: rotate(20deg);
+	transition-duration: 0.5s;
+}
+
+div.skills{
+	width: inherit;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr;
+}
+
+.button, .button1 {
+	transition-duration: 0.6s;
+	width: 40px;
+	padding: 10px;
+	margin-bottom: 0px;
+}
+.button:hover{
+	transform: translateX(-5px);
+}
+.button1:hover{
+	transform: translateX(5px);
+}
+img.projects{
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid black;
+}
+
+div.projects{
+	display: grid;
+	grid-template-columns: 60px 1fr 60px;
+}
+
+div.projects div{
+	margin: auto 0;
+}
+#info{
+	background-color: #111;
+	color: white;
+	font-size: 17px;
+	padding: 5px;
+}
